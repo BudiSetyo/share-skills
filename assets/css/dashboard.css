@@ -120,7 +120,7 @@ body {
     margin-right: 20px;
 }
 
-.col-6 {
+.col-5 {
     margin-left: 32px;
 }
 
@@ -181,8 +181,262 @@ body {
 }
 
 .schedule {
-    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    height: 930px;
     margin-top: 33px;
     background-color: #FFF;
     border-radius: 20px;
+}
+
+.calender {
+    position: relative;
+    top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    margin-left: 40px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 23.66px;
+    line-height: 29px;
+}
+
+.calender-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 40px;
+}
+
+.calender-table {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.calender-number {
+    height: 61px;
+    text-align: center;
+}
+
+.current-day {
+    width: 31px;
+    background-color: #5784BA;
+    border-radius: 15px;
+}
+
+.current-day p {
+    color: #FFF;
+}
+
+.day {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #989898;
+}
+
+.number {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.all-schedule {
+    margin-top: 21px;
+    text-align: center;
+}
+
+.all-schedule p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #5784BA;
+}
+
+.all-schedule p span {
+    color: #ADA9BB;
+}
+
+.list {
+    margin-top: 22px;
+}
+
+.clock {
+    margin-left: 24px;
+    margin-right: 24px;
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+.clock p {
+    display: inline-block;
+    position: relative;
+    padding: 2px;
+    bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #FFF;
+}
+
+.class {
+    margin-top: -21px;
+    justify-content: space-around;
+}
+
+.col-7 {
+    height: 178px;
+    padding: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E6EDF6;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h4 {
+    display: inline-block;
+    width: 178px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.title img {
+    margin-top: 10px;
+    height: 4px;
+}
+
+.col-7 p {
+    margin-top: 80px;
+    font-size: 14px;
+}
+
+.col-7 .time-2 {
+    margin-top: 100px;
+}
+
+.col-3 {
+    height: 178px;
+    padding: 16px;
+    background-color: #E6EDF6;
+    border-radius: 10px 0 0 10px;
+    border-right: 5px solid #ece9e9;
+}
+
+.empty-class {
+    background-color: #FFF;
+}
+
+.col-3 h4 {
+    display: inline-block;
+    width: 178px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.col-3 p {
+    margin-top: 85px;
+    font-size: 14px;
+}
+
+.class-1 {
+    background-image: url(../images/background-bank.png);
+}
+
+.class-2 {
+    background-image: url(../images/background-history.png);
+}
+
+.class-3 {
+    background-image: url(../images/background-coding.png);
+}
+
+.member {
+    padding: 32px 40px;
+    margin-left: 32px;
+    height: 1398px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+
+.message-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-title h5 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.message-title img {
+    width: 32px;
+    height: 32px;
+}
+
+.form-search {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.search-input {
+    width: 100%;
+    height: 47px;
+    margin-top: 24px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 18px;
+    background-color: #E6EDF6;
+}
+
+.search-icon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    bottom: 34px;
+    left: 10px;
+}
+
+.users {
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    margin-bottom: 19px;
+    align-items: center;
+}
+
+.users img {
+    width: 75px;
+    height: 75px;
+    margin-right: 40px;
+}
+
+.users .users-message {
+    display: flex;
+    flex-direction: column;
+}
+
+.users .name {
+    display: inline-block;
+    width: 180px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.users .message {
+    display: inline-block;
+    width: 180px;
+    font-size: 12px;
+}
+
+.users .time {
+    font-size: 14px;
 }
