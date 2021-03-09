@@ -90,6 +90,10 @@ body {
     margin-right: 20px;
 }
 
+.dashboard-label p {
+    display: inline-block;
+}
+
 .another-page {
     bottom: 50px;
     position: relative;
@@ -118,6 +122,10 @@ body {
     width: 30px;
     height: 30px;
     margin-right: 20px;
+}
+
+.another-page p {
+    display: inline-block;
 }
 
 .col-5 {
@@ -200,7 +208,7 @@ body {
     margin-left: 40px;
     display: inline-block;
     font-weight: bold;
-    font-size: 23.66px;
+    font-size: 24px;
     line-height: 29px;
 }
 
@@ -217,7 +225,8 @@ body {
 }
 
 .calender-number {
-    height: 61px;
+    height: 50px;
+    padding: 3px;
     text-align: center;
 }
 
@@ -232,6 +241,7 @@ body {
 }
 
 .day {
+    margin: 0;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
@@ -239,6 +249,7 @@ body {
 }
 
 .number {
+    margin: 0;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
@@ -289,6 +300,9 @@ body {
 .col-7 {
     height: 178px;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #E6EDF6;
@@ -302,7 +316,7 @@ body {
 
 .title h4 {
     display: inline-block;
-    width: 178px;
+    width: 160px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -312,7 +326,7 @@ body {
     height: 4px;
 }
 
-.col-7 p {
+.time {
     margin-top: 80px;
     font-size: 14px;
 }
@@ -329,20 +343,16 @@ body {
     border-right: 5px solid #ece9e9;
 }
 
-.empty-class {
-    background-color: #FFF;
-}
-
-.col-3 h4 {
-    display: inline-block;
-    width: 178px;
-    font-size: 16px;
-    font-weight: bold;
+.col-3 .title {
+    width: 300px;
 }
 
 .col-3 p {
-    margin-top: 85px;
-    font-size: 14px;
+    margin-top: 100px;
+}
+
+.empty-class {
+    background-color: #FFF;
 }
 
 .class-1 {
@@ -358,7 +368,7 @@ body {
 }
 
 .member {
-    padding: 32px 40px;
+    padding: 32px;
     margin-left: 32px;
     height: 1398px;
     background-color: #fff;
@@ -392,6 +402,8 @@ body {
     height: 47px;
     margin-top: 24px;
     padding-left: 40px;
+    font-size: 15px;
+    font-weight: bold;
     border: none;
     border-radius: 18px;
     background-color: #E6EDF6;
@@ -427,6 +439,7 @@ body {
 .users .name {
     display: inline-block;
     width: 180px;
+    margin: 0;
     font-size: 18px;
     font-weight: bold;
 }
@@ -434,9 +447,257 @@ body {
 .users .message {
     display: inline-block;
     width: 180px;
+    margin: 0;
     font-size: 12px;
 }
 
 .users .time {
-    font-size: 14px;
+    margin: 0;
+    font-size: 14px;   
+}
+
+@media screen and (max-width : 1230px) {
+    .profile-icon, .profile-name, .status {
+        margin-left: 10px;
+    }
+
+    .dashboard-label, .another-page label {
+        margin-left: 10px;
+    }
+
+    .dashboard-label img, .another-page label img {
+        margin-right: 10px;
+    }
+
+    .title h4 {
+        font-size: 11px;
+    }
+
+    .time {
+        font-size: 9px;
+    }
+
+    .users img {
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+    }
+    
+    .users .name {
+        display: inline-block;
+        margin: 0;
+        width: 140px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .users .message {
+        display: inline-block;
+        margin: 0;
+        width: 140px;
+        font-size: 8px;
+    }
+    
+    .users .time {
+        font-size: 10px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width : 872px) {
+    .profile-name {
+        font-size: 16px;
+    }
+
+    .dashboard-label, .another-page label {
+        font-size: 12px;
+    }
+
+    .dashboard-label img, .another-page label img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .schedule {
+        height: 830px;
+    }
+
+    .carousel p, .date {
+        font-size: 18px;
+    }
+
+    .clock {
+        border-top: 1px solid black;
+    }
+
+    .clock p {
+        font-size: 12px;
+    }
+
+    .day, .number {
+        font-size: 14px;
+    }
+
+    .col-7, .col-3 {
+        height: 148px;
+        padding: 5px;
+    }
+
+    .title img {
+        margin-top: 4px;
+    }
+
+    .title h4 {
+        width: 100px;
+        font-size: 9px;
+    }
+
+    .time {
+        margin-top: 90px;
+        font-size: 7px;
+    }
+
+    .member {
+        padding: 20px 10px;
+        height: 1340px;
+    }
+
+    .message-title h5 {
+        font-size: 16px;
+    }
+
+    .message-title img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-input {
+        height: 27px;
+        font-size: 12px;
+    }
+
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        bottom: 23px;
+    }
+
+    .users img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .users .name {
+        width: 60px;
+        font-size: 10px;
+    }
+
+    .users .message{
+        width: 60px;
+        font-size: 7px;
+    }
+
+    .users .time {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .notif, .profile {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .notif-icon, .profile-icon {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .profile-icon {
+        width: 40px;
+    }
+
+    .profile-name, .status {
+        display: none;
+    }
+
+    .current-page label p, .another-page label p {
+        display: none;
+    }
+
+    .dashboard-label img {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+
+    .another-page label img {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+
+    .slider {
+        height: 300px;
+    }
+
+    .carousel {
+        height: 230px;
+    }
+
+    .carousel p {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .schedule {
+        height: 870px;
+    }
+
+    .calender {
+        flex-direction: column;
+        margin-left: 5px;
+    }
+
+    .calender .date {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .calender-number .day, .calender-number .number {
+        font-size: 8px;
+    }
+
+    .col-3 {
+        display: none;
+    }
+    
+    .member {
+        width: 50px;
+        padding: 10px 5px;
+        height: 860px;
+    }
+
+    .message-title {
+        justify-content: center;
+    }
+
+    .message-title h5 {
+        display: none;
+    }
+
+    .users {
+        height: 40px;
+        justify-content: center;
+    }
+
+    .users .name, .users .message, .users .time {
+        display: none;
+    }
+
+    .users img {
+        margin: 0;
+    }
+
 }
