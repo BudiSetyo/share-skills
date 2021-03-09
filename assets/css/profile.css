@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100;1,500&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif ;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    height: 100vh;
+    background-color: #E6EDF6;
+}
+
+.wraper {
+    height: 100vh;
+}
+
+.col-2, .col-8 {
+    height: 95vh;
+    border-radius: 20px;
+}
+
+.col-2 {
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #5784BA;
+}
+
+.profile {
+    background-color: #FFF;
+    border-radius: 20px;
+    height: 40vh;
+}
+
+.notif {
+    padding-top: 32px;
+    padding-right: 2vw;
+}
+
+.user {
+    padding-top: 35px;
+    padding-left: 2vw;
+}
+
+.user img {
+    width: 5vw;
+    height: fit-content;
+}
+
+.user h5 {
+    padding-top: 27px;
+    margin: 0;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.user p {
+    padding-top: 2px;
+    padding-bottom: 74px;
+    margin: 0;
+    font-size: 1.5vh;
+}
+
+.navigation {
+    position: relative;
+    bottom: 10vh;
+    height: 40vh;
+    padding-top: 24px;
+    border-radius: 20px;
+    background-color: #5784BA;
+}
+
+.navigation .navigate {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 52px;
+}
+
+.navigation img {
+    width: 2.5vw;
+    margin-right: 2vw;
+    height: fit-content;
+}
+
+.navigation p {
+    margin: 0;
+    font-size: 2vh;
+    color: #FFF;
+}
+
+.navigation .logout {
+    color: #FF1313;
+}
+
