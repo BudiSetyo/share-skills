@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif ;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    background-color: #E6EDF6;
+    box-sizing: border-box;
+}
+.container-fluid {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* sidebar */
+
+aside {
+    width: 18vw;
+    height: 95%;
+    background-color: #5784BA;
+    border-radius: 20px;
+}
+
+.notif {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.notif img {
+    padding-right: 1vw;
+    padding-top: 2.5vh;
+}
+
+
+.profile {
+    padding-left: 2vw;
+    padding-top: 3vh;
+}
+
+.profile img {
+    width: 6vw;
+    padding-bottom: 2vh;
+}
+
+.profile h5, .profile p {
+    margin: 0;
+    color: #FFF;
+}
+
+.profile h5 {
+    padding-bottom: 0.5vh;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.profile p {
+    padding-bottom: 4vh;
+    font-size: 0.7rem;
+}
+
+.navigation .nav {
+    padding-left: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.navigation .current-nav {
+    background-color: #FFF;
+    height: 15vh;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.navigation .nav img {
+    width: 2.5vw;
+    height: fit-content;
+    margin-right: 1.5vw;
+}
+
+.navigation .nav p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.navigation .current-nav p {
+    color: #2F2F2F;
+}
+
+.navigation #top-nav {
+    position: relative;
+    bottom: 7vh;
+    background-color: #5784BA;
+    border-radius: 20px;
+}
+
+/* section */
+
+section {
+    width: 75%;
+    height: 95%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.title img {
+    height: 2vh;
+}
+
+.title h2 {
+    margin-bottom: 0;
+    margin-left: 1vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content {
+    height: 92%;
+    border-radius: 20px;
+    background-color: #FFF;
+    overflow: auto;
+}
+
+.content .top {
+    height: 30%;
+    background-image: url(../images/background-class.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+}
+
+.content .top .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.content .top .box h2 {
+    width: 27vw;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.content .top .box .box-des {
+    display: flex;
+    width: 27vw;
+    justify-content: space-between;
+}
+
+.content .top .box .box-des p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.content .bot {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .bot .bar-box {
+    display: flex;
+    align-items: flex-end;
+    width: 90%;
+    height: 10%;
+}
+
+.content .bot .bar-box img {
+    position: relative;
+    width: 16.5vw;
+    height: fit-content;
+}
+
+.content .bot .bar-box .progres-bar {
+    margin-left: 2vw;
+    margin-bottom: 1vh;
+    width: 100%;
+}
+
+.content .bot .bar-box .progres-bar p {
+    margin-bottom: 1vh;
+    font-size: 1.2vh;
+    color: #5784BA;
+}
+
+.content .bot .bar-box .progres-bar .bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+}
+
+.content .bot .bar-box .progres-bar .bar .percent {
+    display: block;
+    position: relative;
+    bottom: 0.2vh;
+    height: 7px;
+    width: 80%;
+    background-color: #5784BA;
+    border-radius: 10px;
+}
+
+
+.bot .menu {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 4vh;
+    margin-top: 2vh;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.bot .menu p {
+    margin-bottom: 0;
+    margin-right: 5vh;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.bot .menu .current-menu {
+    position: relative;
+    color: #5784BA;
+    border-bottom: 2px solid #5784BA;
+}
+
+.bot .description {
+    width: 90%;
+    margin-top: 2.5vh;
+}
+
+.bot .learn {
+    width: 90%;
+}
+
+.bot .description h3, .bot .learn h3 {
+    font-size: 2rem;
+}
+
+.bot .description p, .bot .learn ul li {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+@media screen and (max-width: 680px) {
+    .container-fluid {
+        padding-top: 2vh;
+        align-items: flex-start;
+    }
+
+    /* side bar */
+
+    aside {
+        width: 11vw;
+        height: 49%;
+    }
+
+    .notif {
+        justify-content: center;
+    }
+
+    .notif img {
+        padding-right: 0;
+    }
+
+    .profile img {
+        width: 7vw;
+    }
+
+    .profile h5, .profile p {
+        display: none;
+    }
+
+    .navigation .nav img {
+        width: 6vw;
+    }
+
+    .navigation .nav p {
+        display: none;
+    }
+
+    /* section */
+
+    .title h2 {
+        font-size: 1rem;
+    }
+
+    .content {
+        height: 45%;
+    }
+
+    .content .top .box h2 {
+        font-size: 1rem;
+    }
+
+    .content .top .box .box-des p {
+        font-size: 0.5rem;
+    }
+
+    .content .bot .bar-box .progres-bar p {
+        margin-bottom: 0.2vh;
+        font-size: 0.5rem;
+    }
+
+    .content .bot .bar-box .progres-bar .bar {
+        height: 1px;
+    }
+
+    .content .bot .bar-box .progres-bar .bar .percent {
+        height: 3px;
+    }
+
+    .bot .menu p {
+        font-size: 0.2rem;
+    }
+
+    .bot .description h3, .bot .learn h3 {
+        font-size: 1rem;
+    }
+
+    .bot .description p, .bot .learn ul li {
+        font-size: 0.6rem;
+    }
+
+}
