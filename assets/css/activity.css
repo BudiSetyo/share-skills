@@ -252,7 +252,7 @@ section {
 .create-class .box-c p {
     display: inline-block;
     margin-bottom: 0;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
     font-weight: 800;
 }
 
@@ -271,8 +271,8 @@ section {
 }
 
 .create-class .box-c select {
-    margin-left: 2vw;
-    font-size: 0.8rem;
+    margin-left: 2.1vw;
+    font-size: 1.2vh;
 }
 
 .create-class .box-c .timer {
@@ -299,4 +299,95 @@ section {
     width: 20vw;
     background-color: #57BA61;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 680px) {
+    .container-fluid {
+        padding-top: 2vh;
+        align-items: flex-start;
+    }
+
+    /* side bar */
+
+    aside {
+        width: 11vw;
+        height: 49%;
+    }
+
+    .notif {
+        justify-content: center;
+    }
+
+    .notif img {
+        padding-right: 0;
+    }
+
+    .profile img {
+        width: 7vw;
+    }
+
+    .profile h5, .profile p {
+        display: none;
+    }
+
+    .navigation .nav img {
+        width: 6vw;
+    }
+
+    .navigation .nav p {
+        display: none;
+    }
+
+    /* section */
+    section {
+        overflow: auto;
+        height: 49%;
+        border-radius: 20px;
+    }
+
+    .create-class {
+        padding: 16px;
+    }
+
+    .myclass .table-header {
+        display: none;
+    }
+
+    .myclass .table-row p {
+        font-size: 25%;
+    }
+
+    .myclass .table-row img {
+        width: 1vw;
+    }
+
+    .new-class {
+        height: 100%;
+    }
+
+    .create-class .box-c {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .create-class .box-c p {
+        font-size: 0.8vh;
+    }
+
+    .create-class .box-c select {
+        font-size: 0.8vh;
+        margin-top: 1vh;
+    }
+
+    .create-class .box-c .dot {
+        display: none;
+    }
+
+    .create-class .des {
+        height: 30%;
+    }
+
+    .create-class .but-wrap .button {
+        font-size: 1.5vh;
+    }
 }
