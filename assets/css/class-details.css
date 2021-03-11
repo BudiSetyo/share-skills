@@ -185,13 +185,13 @@ section {
 .content .bot .bar-box {
     display: flex;
     align-items: flex-end;
-    width: 90%;
+    width: 80%;
     height: 10%;
 }
 
 .content .bot .bar-box img {
     position: relative;
-    width: 16.5vw;
+    width: 12vw;
     height: fit-content;
 }
 
@@ -338,7 +338,7 @@ section {
     }
 
     .bot .menu {
-        height: 2vh;
+        height: 2.5vh;
     }
 
     .bot .menu p {

@@ -133,7 +133,7 @@ section {
 }
 
 .content {
-    height: 92%;
+    height: 93%;
     border-radius: 20px;
     background-color: #FFF;
     overflow: auto;
@@ -185,13 +185,13 @@ section {
 .content .bot .bar-box {
     display: flex;
     align-items: flex-end;
-    width: 90%;
+    width: 80%;
     height: 10%;
 }
 
 .content .bot .bar-box img {
     position: relative;
-    width: 16.5vw;
+    width: 12vw;
     height: fit-content;
 }
 
@@ -232,6 +232,7 @@ section {
     width: 90%;
     height: 4vh;
     margin-top: 2vh;
+    margin-bottom: 3vh;
     border-bottom: 1px solid #C4C4C4;
 }
 
@@ -247,6 +248,36 @@ section {
     color: #5784BA;
     border-bottom: 2px solid #5784BA;
 }
+
+.bot .member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 1vh;
+}
+
+.bot .member .list {
+    height: 2vh;
+}
+
+.bot .member .member-name {
+    display: flex;
+    align-items: center;
+}
+
+.bot .member .member-name img {
+    width: 4vw;
+}
+
+.bot .member .member-name p {
+    margin-bottom: 0;
+    margin-left: 2vw;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
 
 
 
@@ -321,12 +352,20 @@ section {
     }
 
     .bot .menu {
-        height: 2vh;
+        height: 2.5vh;
+        margin-bottom: 1vh;
     }
 
     .bot .menu p {
         font-size: 0.2rem;
     }
 
+    .bot .member .member-name p {
+        font-size: 0.4rem;
+    }
+
+    .bot .member .list {
+        height: 1vh;
+    }
 
 }
