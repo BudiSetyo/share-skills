@@ -642,6 +642,10 @@ body {
         height: 300px;
     }
 
+    .slider h1 {
+        margin-left: 20px;
+    }
+
     .carousel {
         height: 230px;
     }
@@ -649,6 +653,7 @@ body {
     .carousel p {
         margin-top: 40px;
         margin-left: 20px;
+        font-size: 0.7rem;
     }
 
     .schedule {

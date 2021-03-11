@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif ;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    background-color: #E6EDF6;
+    box-sizing: border-box;
+}
+.container-fluid {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* sidebar */
+
+aside {
+    width: 18vw;
+    height: 95%;
+    background-color: #5784BA;
+    border-radius: 20px;
+}
+
+.notif {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.notif img {
+    padding-right: 1vw;
+    padding-top: 2.5vh;
+}
+
+
+.profile {
+    padding-left: 2vw;
+    padding-top: 3vh;
+}
+
+.profile img {
+    width: 6vw;
+    padding-bottom: 2vh;
+}
+
+.profile h5, .profile p {
+    margin: 0;
+    color: #FFF;
+}
+
+.profile h5 {
+    padding-bottom: 0.5vh;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.profile p {
+    padding-bottom: 4vh;
+    font-size: 0.7rem;
+}
+
+.navigation .nav {
+    padding-left: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.navigation .current-nav {
+    background-color: #FFF;
+    height: 15vh;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.navigation .nav img {
+    width: 2.5vw;
+    height: fit-content;
+    margin-right: 1.5vw;
+}
+
+.navigation .nav p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.navigation .current-nav p {
+    color: #2F2F2F;
+}
+
+.navigation #top-nav {
+    position: relative;
+    bottom: 7vh;
+    background-color: #5784BA;
+    border-radius: 20px;
+}
+
+/* Section 1*/
+
+section {
+    width: 75vw;
+    height: 95%;
+    box-sizing: border-box;
+}
+
+.class {
+    height: 34vh;
+    margin-bottom: 2vh;
+}
+
+.title {
+    margin-top: 1vh;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.myclass {
+    margin-top: 2vh;
+}
+
+.myclass .myclass-title {
+    padding-left: 2vw;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.myclass .table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    height: 5vh;
+}
+
+.myclass .table-header p {
+    margin: 0;
+    display: inline-block;
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.myclass .table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.5vw;
+    padding-right: 1vw;
+    margin-bottom: 0.2vw;
+    height: 5vh;
+    box-shadow: 5px 5px #EBEBEB;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.myclass .table-row p {
+    margin: 0;
+    font-size: 60%;
+}
+
+.myclass .table-row .checkbox-tab, .myclass .table-header .checkbox {
+    margin-right: 2%;
+}
+
+.myclass .table-row .table-1, .myclass .table-header .class-name {
+    width: 20%;
+}
+
+.myclass .table-row .table-2, .myclass .table-header .category {
+    width: 10%;
+}
+
+.myclass .table-row .table-3, .myclass .table-header .description {
+    width: 30%;
+}
+
+.myclass .table-row .table-4, .myclass .table-header .schedule {
+    width: 20%;
+}
+
+.myclass .table-row .table-5, .myclass .table-header .students {
+    width: 10%;
+}
+
+.myclass .table-row .table-5 img {
+    padding: 0;
+}
+
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.view p{
+    font-size: 70%;
+    margin: 0;
+}
+
+.view img {
+    width: 10px;
+    height: 10px;
+    margin-left: 0.5vw;
+}
+
+/* section 2 */
+
+.new-class {
+    height: 61%;
+}
+
+.new-title {
+    padding-left: 2vw;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.create-class {
+    height: 93%;
+    padding: 34px 32px 16px;
+    border-radius: 20px;
+    background-color: #FFF;
+}
+
+.create-class .box {
+    display: flex;
+}
+
+.create-class .box-c {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 1.5vh;
+}
+
+.create-class .box-c p {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 1.5vh;
+    font-weight: 800;
+}
+
+.create-class .box-c .lab {
+    width: 10vw;
+}
+
+.create-class .box-c .check {
+    margin-left: 2vw;
+}
+
+.create-class .box-c .check input {
+    position: relative;
+    top: 0.1vh;
+    margin-right: 1vw;
+}
+
+.create-class .box-c select {
+    margin-left: 2vw;
+    font-size: 0.8rem;
+}
+
+.create-class .box-c .timer {
+    margin-left: 1vw;
+}
+
+.create-class .box-c .timer .time {
+    border-bottom: 1px solid black;
+}
+
+.create-class .des {
+    height: 60%;
+    background-color: #EBEBEB;
+    border-radius: 5px;
+}
+
+.create-class .but-wrap {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.create-class .but-wrap .button {
+    width: 20vw;
+    background-color: #57BA61;
+    border-radius: 20px;
+}
