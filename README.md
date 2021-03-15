@@ -38,7 +38,7 @@ These are the pictures from my project
 
 ## Dashboard
 
-<image width="700" scr="assets/images/screenshot/ss-3.JPG" />
+<image width="700" src="assets/images/screenshot/ss-3.JPG" />
 
 ## Activity
 
