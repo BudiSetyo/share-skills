@@ -30,26 +30,26 @@ These are the pictures from my project
 
 ## Login
 
-<img width="700" scr="assets/images/screenshot/ss1.JPG">
+<img width="700" scr="assets/images/screenshot/ss1.JPG" />
 
 ## Reset Password
 
-<img width="700" scr="assets/images/screenshot/ss2.JPG">
+<img width="700" scr="assets/images/screenshot/ss2.JPG" />
 
 ## Dashboard
 
-<img width="700" scr="assets/images/screenshot/ss3.JPG">
+<img width="700" scr="assets/images/screenshot/ss3.JPG" />
 
 ## Activity
 
-<img width="700" scr="assets/images/screenshot/ss4.JPG">
+<img width="700" scr="assets/images/screenshot/ss4.JPG" />
 
-<img width="700" scr="assets/images/screenshot/ss5.JPG">
+<img width="700" scr="assets/images/screenshot/ss5.JPG" />
 
-<img width="700" scr="assets/images/screenshot/ss6.JPG">
+<img width="700" scr="assets/images/screenshot/ss6.JPG" />
 
-<img width="700" scr="assets/images/screenshot/ss7.JPG">
+<img width="700" scr="assets/images/screenshot/ss7.JPG" />
 
 ## Profile
 
-<img width="700" scr="assets/images/screenshot/ss8.JPG">
+<img width="700" scr="assets/images/screenshot/ss8.JPG" />
