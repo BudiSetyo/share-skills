@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100;1,500&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif ;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container-fluid {
+    height: 100%;
+    padding: 0;
+    background-color: #E6EDF6;
+    overflow: scroll;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* navbar */
+
+nav {
+    display: none;
+    height: 7%;
+    background-color: #5784BA;
+}
+
+nav img {
+    height: 5vh;
+}
+
+nav .menu {
+    margin-left: 2vw;
+}
+
+nav .chat {
+    margin-right: 2vw;
+}
+
+/* sidebar */
+
+.wrapper .navigation {
+    width: 20%;
+    height: 95%;
+    background-color: #5784BA;
+    border-radius: 20px;
+}
+
+.wrapper .navigation .notif {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5vh;
+}
+
+.wrapper .navigation .notif img {
+    height: 3vh;
+    margin-top: 3vh;
+    margin-right: 1vw;
+}
+
+.wrapper .navigation .profile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    padding-left: 2vw;
+}
+
+.wrapper .navigation .profile img {
+    width: 5vw;
+    margin-bottom: 3vh;
+}
+
+.wrapper .navigation .profile h5 {
+    font-size: 2.5vh;
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+.wrapper .navigation .profile p {
+    font-size: 2vh;
+    color: #FFF;
+}
+
+.wrapper .navigation .current {
+    background-color: #FFF;
+    border-radius: 20px 20px 0 0;
+    height: 20%;
+}
+
+.wrapper .navigation .current .option p {
+    color: black;
+}
+
+.wrapper .navigation .another {
+    position: relative;
+    bottom: 11%;
+    border-radius: 20px;
+    background-color: #5784BA;
+}
+
+.wrapper .navigation .option {
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    height: 8vh;
+}
+
+.wrapper .navigation .option img {
+    height: 4vh;
+    margin-right: 1vw;
+}
+
+.wrapper .navigation .option p {
+    font-size: 2.2vh;
+    margin-bottom: 0;
+    color: #FFF;
+}
+
+/* content */
+
+main {
+    width: 40%;
+    height: 95%;
+}
+
+/* top */
+
+main .top {
+    width: 100%;
+    height: 45%;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF;
+    border-radius: 30px;
+}
+
+main .top h2 {
+    margin: 0;
+    display: inline-block;
+    padding: 3vh 3vw 1vh;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+main .top .carousel {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../images/background-carousel.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 30px 30px;
+}
+
+main .top .carousel .slider {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(0deg, #000000 -15.5%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 0 0 30px 30px;
+}
+
+main .top .carousel .slider .des {
+    width: 85%;
+    margin-bottom: 1vh;
+}
+
+main .top .carousel .slider .des p {
+    font-size: 2.5vh;
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+main .top .carousel .slider .car-nav {
+    margin-bottom: 2.5vh;
+}
+
+main .top .carousel .slider .car-nav .current-button {
+    width: 3vw;
+    background-color: #5784BA;
+}
+
+main .top .carousel .slider .car-nav button {
+    border: none;
+    height: 1.5vh;
+    width: 1vw;
+    border-radius: 20px;
+}
+
+/* bot */
+
+main .bot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 97%;
+    background-color: #FFF;
+    border-radius: 30px;
+}
+
+/* calender */
+
+main .bot .calender {
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .bot .calender .today {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+main .bot .calender .today h2 {
+    font-size: 3vh;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+main .bot .calender .today img {
+    height: 3vh;
+}
+
+main .bot .calender .calender-table {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 1.5vh;
+}
+
+main .bot .calender .calender-table .calender-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .bot .calender .calender-table .calender-number p {
+    margin-bottom: 0;
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+main .bot .calender .calender-table .calender-number .day {
+    color: #989898;
+}
+
+main .bot .calender .calender-table .current-day {
+    background-color: #5784BA;
+    border-radius: 15px;
+    width: 2vw;
+}
+
+main .bot .calender .calender-table .current-day .day, main .bot .calender .calender-table .current-day p {
+    color: #FFF;
+}
+
+/* schedule */
+
+main .bot .schedule {
+    width: 85%;
+    margin-top: 2vh;
+}
+
+main .bot .schedule .schedule-title {
+    text-align: center;
+}
+
+main .bot .schedule .schedule-title p {
+    margin-bottom: 0;
+    font-size: 2vh;
+    font-weight: 500;
+    color: #5784BA;
+}
+
+main .bot .schedule .schedule-title p span {
+    color: #ADA9BB;
+}
+
+main .bot .time {
+    border-top: 1px solid black;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+main .bot .time p {
+    position: relative;
+    bottom: 1.7vh;
+    display: inline-block;
+    width: 5vw;
+    margin-bottom: 0;
+    font-size: 2vh;
+    background-color: #FFF;
+}
+
+main .bot .class {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .bot .class p {
+    margin-bottom: 0;
+}
+
+main .bot .class .class-1 {
+    width: 60%;
+    height: 18vh;
+    padding: 1vh 1vw 0 1vw;
+    background-color: #E6EDF6;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+main .bot .class .bg-1 {
+    background-image: url(../images/background-bank.png);
+}
+
+main .bot .class .bg-2 {
+    background-image: url(../images/background-history.png);
+}
+
+main .bot .class .bg-3 {
+    background-image: url(../images/background-coding.png);
+}
+
+main .bot .class .class-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .bot .class .class-title p {
+    display: inline-block;
+    width: 10vw;
+    height: 8vh;
+    font-size: 2vh;
+    margin-bottom: 5vh;
+}
+
+main .bot .class .class-title img {
+    height: 0.7vh;
+    position: relative;
+    top: 1vh;
+}
+
+main .bot .class .class-2 {
+    width: 30%;
+    height: 18vh;
+    padding: 1vh 0 0 1vw;
+    background-color: #E6EDF6;
+    border-right: 4px solid #dad6d6;
+    border-radius: 10px 0 0 10px;
+}
+
+main .bot .class .empty-class {
+    background-color: #FFF;
+}
+
+main .bot .class .class-2 .class-title {
+    overflow: hidden;
+}
+
+main .bot .class .duration p {
+    font-size: 1.3vh;
+}
+
+main .bot .time p {
+    font-size: 1.5vh;
+}
+
+/* message */
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 95%;
+    overflow: auto;
+    padding-top: 2vh;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.member .member-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 2vh;
+}
+
+.member .member-title h2 {
+    font-size: 3vh;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.member .member-title img {
+    height: 3vh;
+}
+
+.member .search {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.member .search input {
+    height: 4.5vh;
+    padding-left: 45px;
+    background-color: #E6EDF6;
+    border: none;
+    border-radius: 17px;
+}
+
+.member .search img {
+    width: 26px;
+    position: relative;
+    bottom: 4vh;
+    left: 1vw;
+}
+
+.member .users {
+    width: 90%;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.member .users img {
+    width: 5vw;
+    height: fit-content;
+    margin-right: 2vw;
+}
+
+.member .users .user-message {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 5vh;
+    margin-right: 1vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.member .users .user-message p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.member .users .user-message .name {
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+.member .users .user-message .message {
+    font-size: 1.3vh;
+}
+
+.member .users .time {
+    font-size: 1.3vh;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    /* navbar */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* sidebar and message */
+
+    .navigation, .member {
+        display: none;
+    }
+
+    /* content */
+
+    main {
+        width: 90%;
+    }
+
+    main .top .carousel .slider .car-nav .current-button {
+        width: 7vw;
+    }
+
+    main .bot {
+        height: 100%;
+    }
+
+    main .bot .calender .calender-table .current-day {
+        width: 5vw;
+    }
+
+    main .bot .time p {
+        width: 10vw;
+        bottom: 2.2vh;
+    }
+
+    main .bot .class .class-title p {
+        width: 25vw;
+        font-size: 1.7vh;
+    }
+
+
+}

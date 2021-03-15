@@ -80,6 +80,10 @@ h1 {
     flex-direction: column;
 }
 
+.button a button {
+    width: 100%;
+}
+
 .button .btn {
     height: 5vh;
     margin-bottom: 2vh;
