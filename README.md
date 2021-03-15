@@ -30,11 +30,11 @@ These are the pictures from my project
 
 ## Login
 
-<image width="700" scr="assets/images/screenshot/ss-1.JPG" />
+<image width="700" src="assets/images/screenshot/ss-1.JPG" />
 
 ## Reset Password
 
-<image width="700" scr="assets/images/screenshot/ss-2.JPG" />
+<image width="700" src="assets/images/screenshot/ss-2.JPG" />
 
 ## Dashboard
 
@@ -42,14 +42,14 @@ These are the pictures from my project
 
 ## Activity
 
-<image width="700" scr="assets/images/screenshot/ss-4.JPG" />
+<image width="700" src="assets/images/screenshot/ss-4.JPG" />
 
-<image width="700" scr="assets/images/screenshot/ss-5.JPG" />
+<image width="700" src="assets/images/screenshot/ss-5.JPG" />
 
-<image width="700" scr="assets/images/screenshot/ss-6.JPG" />
+<image width="700" src="assets/images/screenshot/ss-6.JPG" />
 
-<image width="700" scr="assets/images/screenshot/ss-7.JPG" />
+<image width="700" src="assets/images/screenshot/ss-7.JPG" />
 
 ## Profile
 
-<image width="700" scr="assets/images/screenshot/ss-8.JPG" />
+<image width="700" src="assets/images/screenshot/ss-8.JPG" />
