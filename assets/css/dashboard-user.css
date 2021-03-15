@@ -3,706 +3,523 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100;1,500&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
     font-family: 'Kanit', sans-serif ;
 }
 
 html, body {
     height: 100vh;
-}
-
-body {
-    background-color: #E6EDF6;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .container-fluid {
-    padding: 24px;
-    box-sizing: border-box;
-}
-
-.col-2 {
-    background-color: #5784BA;
+    height: 100%;
     padding: 0;
-    height: 100vh;
-    border-radius: 20px;
-    box-sizing: border-box;
+    background-color: #E6EDF6;
+    overflow: scroll;
 }
 
-.profile {
+.wrapper {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-
-.notif {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.notif-icon {
-    width: 19px;
-    margin-top: 34px;
-    margin-right: 29px;
-}
-
-.profile-icon {
-    width: 56px;
-    margin-left: 32px;
-    margin-top: 35px;
-}
-
-.profile-name {
-    margin-top: 27px;
-    margin-left: 32px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #F9F9F9;
-}
-
-.status {
-    margin-left: 32px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 12px;
-    color: #F9F9F9;
-}
-
-.current-page {
-    margin-top: 74px;
-    background-color: #FFF;
-    border-radius: 20px;
-    box-sizing: border-box;
-}
-
-.dashboard-label {
-    height: 100px;
-    margin-top: 24px;
-    margin-left: 32px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.dashboard-label img {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
-
-.dashboard-label p {
-    display: inline-block;
-}
-
-.another-page {
-    bottom: 50px;
-    position: relative;
-    height: 60vh;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: #5784BA;
-}
-
-.another-page label {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin-left: 32px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #F9F9F9;
-}
-
-.another-page .logout-label {
-    color: #FF1313;;
-}
-
-.another-page label img {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
-
-.another-page p {
-    display: inline-block;
-}
-
-.col-5 {
-    margin-left: 32px;
-}
-
-.slider {
-    height: 395px;
-    background-color: #FFF;
-    border-radius: 20px;
-    background-image: url(../images/background-carousel.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 100px;
-    opacity: 1.3;
-}
-
-.slider h1 {
-    display: inline-block;
-    margin-top: 32px;
-    margin-left: 40px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    font-weight: bold;
-}
-
-.carousel {
-    height: 310px;
-    background: linear-gradient(0deg, #000000 -15.5%, rgba(0, 0, 0, 0) 100%);
-    border-radius: 0px 0px 30px 30px;
-}
-
-.carousel p {
-    display: inline-block;
-    margin-top: 170px;
-    margin-left: 40px;
-    font-size: 24px;
-    color: #F9F9F9;
-    opacity: 1;
-}
-
-.indicator {
-    display: flex;
-    justify-content: center;
-}
-
-.indicator button {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    border: none;
-    margin-right: 5px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-
-.indicator .current-nav {
-    width: 21px;
-    background-color: #5784BA;
-    border-radius: 5px;
-}
-
-.schedule {
-    display: flex;
-    flex-direction: column;
-    height: 700px;
-    margin-top: 33px;
-    background-color: #FFF;
-    border-radius: 20px;
-}
-
-.calender {
-    position: relative;
-    top: 32px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.date {
-    margin-left: 40px;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.calender-icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 40px;
-}
-
-.calender-table {
-    display: flex;
-    margin-top: 40px;
     justify-content: space-around;
-}
-
-.calender-number {
-    height: 50px;
-    padding: 3px;
-    text-align: center;
-}
-
-.current-day {
-    width: 31px;
-    background-color: #5784BA;
-    border-radius: 15px;
-}
-
-.current-day p {
-    color: #FFF;
-}
-
-.day {
-    margin: 0;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    color: #989898;
-}
-
-.number {
-    margin: 0;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.all-schedule {
-    margin-top: 21px;
-    text-align: center;
-}
-
-.all-schedule p {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #5784BA;
-}
-
-.all-schedule p span {
-    color: #ADA9BB;
-}
-
-.list {
-    margin-top: 22px;
-}
-
-.clock {
-    margin-left: 24px;
-    margin-right: 24px;
-    border-top: 2px solid black;
-    text-align: center;
-}
-
-.clock p {
-    display: inline-block;
-    position: relative;
-    padding: 2px;
-    bottom: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #FFF;
-}
-
-.class {
-    margin-top: -21px;
-    justify-content: space-around;
-}
-
-.col-7 {
-    height: 178px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #E6EDF6;
-    border-radius: 10px;
-}
-
-.title {
-    display: flex;
-    justify-content: space-between;
-}
-
-.title h4 {
-    display: inline-block;
-    width: 160px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.title img {
-    margin-top: 10px;
-    height: 4px;
-}
-
-.time {
-    margin-top: 80px;
-    font-size: 14px;
-}
-
-.col-7 .time-2 {
-    margin-top: 100px;
-}
-
-.col-3 {
-    height: 178px;
-    padding: 16px;
-    background-color: #E6EDF6;
-    border-radius: 10px 0 0 10px;
-    border-right: 5px solid #ece9e9;
-}
-
-.col-3 .title {
-    width: 300px;
-}
-
-.col-3 p {
-    margin-top: 100px;
-}
-
-.empty-class {
-    background-color: #FFF;
-}
-
-.class-1 {
-    background-image: url(../images/background-bank.png);
-}
-
-.class-2 {
-    background-image: url(../images/background-history.png);
-}
-
-.class-3 {
-    background-image: url(../images/background-coding.png);
-}
-
-.member {
-    padding: 32px;
-    margin-left: 32px;
-    height: 1398px;
-    background-color: #fff;
-    border: none;
-    border-radius: 20px;
-}
-
-.message-title {
-    display: flex;
-    justify-content: space-between;
-}
-
-.message-title h5 {
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.message-title img {
-    width: 32px;
-    height: 32px;
-}
-
-.form-search {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.search-input {
-    width: 100%;
-    height: 47px;
-    margin-top: 24px;
-    padding-left: 40px;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-radius: 18px;
-    background-color: #E6EDF6;
-}
-
-.search-icon {
-    width: 25px;
-    height: 25px;
-    position: relative;
-    bottom: 34px;
-    left: 10px;
-}
-
-.users {
-    display: flex;
-    flex-direction: row;
-    height: 75px;
-    margin-bottom: 19px;
     align-items: center;
 }
 
-.users img {
-    width: 75px;
-    height: 75px;
-    margin-right: 40px;
+/* navbar */
+
+nav {
+    display: none;
+    height: 7%;
+    background-color: #5784BA;
 }
 
-.users .users-message {
+nav img {
+    height: 5vh;
+}
+
+nav .menu {
+    margin-left: 2vw;
+}
+
+nav .chat {
+    margin-right: 2vw;
+}
+
+/* sidebar */
+
+.wrapper .navigation {
+    width: 20%;
+    height: 95%;
+    background-color: #5784BA;
+    border-radius: 20px;
+}
+
+.wrapper .navigation .notif {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5vh;
+}
+
+.wrapper .navigation .notif img {
+    height: 3vh;
+    margin-top: 3vh;
+    margin-right: 1vw;
+}
+
+.wrapper .navigation .profile {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3vh;
+    padding-left: 2vw;
 }
 
-.users .name {
-    display: inline-block;
-    width: 180px;
+.wrapper .navigation .profile img {
+    width: 5vw;
+    margin-bottom: 3vh;
+}
+
+.wrapper .navigation .profile h5 {
+    font-size: 2.5vh;
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+.wrapper .navigation .profile p {
+    font-size: 2vh;
+    color: #FFF;
+}
+
+.wrapper .navigation .current {
+    background-color: #FFF;
+    border-radius: 20px 20px 0 0;
+    height: 20%;
+}
+
+.wrapper .navigation .current .option p {
+    color: black;
+}
+
+.wrapper .navigation .another {
+    position: relative;
+    bottom: 11%;
+    border-radius: 20px;
+    background-color: #5784BA;
+}
+
+.wrapper .navigation .option {
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    height: 8vh;
+}
+
+.wrapper .navigation .option img {
+    height: 4vh;
+    margin-right: 1vw;
+}
+
+.wrapper .navigation .option p {
+    font-size: 2.2vh;
+    margin-bottom: 0;
+    color: #FFF;
+}
+
+/* content */
+
+main {
+    width: 40%;
+    height: 95%;
+}
+
+/* top */
+
+main .top {
+    width: 100%;
+    height: 45%;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF;
+    border-radius: 30px;
+}
+
+main .top h2 {
     margin: 0;
-    font-size: 18px;
+    display: inline-block;
+    padding: 3vh 3vw 1vh;
     font-weight: bold;
+    font-size: 3vh;
 }
 
-.users .message {
+main .top .carousel {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../images/background-carousel.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 30px 30px;
+}
+
+main .top .carousel .slider {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(0deg, #000000 -15.5%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 0 0 30px 30px;
+}
+
+main .top .carousel .slider .des {
+    width: 85%;
+    margin-bottom: 1vh;
+}
+
+main .top .carousel .slider .des p {
+    font-size: 2.5vh;
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+main .top .carousel .slider .car-nav {
+    margin-bottom: 2.5vh;
+}
+
+main .top .carousel .slider .car-nav .current-button {
+    width: 3vw;
+    background-color: #5784BA;
+}
+
+main .top .carousel .slider .car-nav button {
+    border: none;
+    height: 1.5vh;
+    width: 1vw;
+    border-radius: 20px;
+}
+
+/* bot */
+
+main .bot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+    background-color: #FFF;
+    border-radius: 30px;
+}
+
+/* calender */
+
+main .bot .calender {
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .bot .calender .today {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+main .bot .calender .today h2 {
+    font-size: 3vh;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+main .bot .calender .today img {
+    height: 3vh;
+}
+
+main .bot .calender .calender-table {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 1.5vh;
+}
+
+main .bot .calender .calender-table .calender-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .bot .calender .calender-table .calender-number p {
+    margin-bottom: 0;
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+main .bot .calender .calender-table .calender-number .day {
+    color: #989898;
+}
+
+main .bot .calender .calender-table .current-day {
+    background-color: #5784BA;
+    border-radius: 15px;
+    width: 2vw;
+}
+
+main .bot .calender .calender-table .current-day .day, main .bot .calender .calender-table .current-day p {
+    color: #FFF;
+}
+
+/* schedule */
+
+main .bot .schedule {
+    width: 85%;
+    margin-top: 2vh;
+}
+
+main .bot .schedule .schedule-title {
+    text-align: center;
+}
+
+main .bot .schedule .schedule-title p {
+    margin-bottom: 0;
+    font-size: 2vh;
+    font-weight: 500;
+    color: #5784BA;
+}
+
+main .bot .schedule .schedule-title p span {
+    color: #ADA9BB;
+}
+
+main .bot .time {
+    border-top: 1px solid black;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+main .bot .time p {
+    position: relative;
+    bottom: 1.7vh;
     display: inline-block;
-    width: 180px;
-    margin: 0;
-    font-size: 12px;
+    width: 5vw;
+    margin-bottom: 0;
+    font-size: 2vh;
+    background-color: #FFF;
 }
 
-.users .time {
-    margin: 0;
-    font-size: 14px;   
+main .bot .class {
+    display: flex;
+    justify-content: space-between;
 }
 
-@media screen and (max-width : 1230px) {
-    .profile-icon, .profile-name, .status {
-        margin-left: 10px;
-    }
-
-    .dashboard-label, .another-page label {
-        margin-left: 10px;
-    }
-
-    .dashboard-label img, .another-page label img {
-        margin-right: 10px;
-    }
-
-    .title h4 {
-        font-size: 11px;
-    }
-
-    .time {
-        font-size: 9px;
-    }
-
-    .users img {
-        width: 45px;
-        height: 45px;
-        margin-right: 20px;
-    }
-    
-    .users .name {
-        display: inline-block;
-        margin: 0;
-        width: 140px;
-        font-size: 14px;
-        font-weight: bold;
-    }
-    
-    .users .message {
-        display: inline-block;
-        margin: 0;
-        width: 140px;
-        font-size: 8px;
-    }
-    
-    .users .time {
-        font-size: 10px;
-        margin: 0;
-    }
-
+main .bot .class p {
+    margin-bottom: 0;
 }
 
-@media screen and (max-width : 872px) {
-    .profile-name {
-        font-size: 16px;
-    }
-
-    .dashboard-label, .another-page label {
-        font-size: 12px;
-    }
-
-    .dashboard-label img, .another-page label img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .schedule {
-        height: 630px;
-    }
-
-    .carousel p, .date {
-        font-size: 18px;
-    }
-
-    .clock {
-        border-top: 1px solid black;
-    }
-
-    .clock p {
-        font-size: 12px;
-    }
-
-    .day, .number {
-        font-size: 14px;
-    }
-
-    .col-7, .col-3 {
-        height: 148px;
-        padding: 5px;
-    }
-
-    .title img {
-        margin-top: 4px;
-    }
-
-    .title h4 {
-        width: 100px;
-        font-size: 9px;
-    }
-
-    .time {
-        margin-top: 90px;
-        font-size: 7px;
-    }
-
-    .member {
-        padding: 20px 10px;
-        height: 1340px;
-    }
-
-    .message-title h5 {
-        font-size: 16px;
-    }
-
-    .message-title img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .search-input {
-        height: 27px;
-        font-size: 12px;
-    }
-
-    .search-icon {
-        width: 20px;
-        height: 20px;
-        bottom: 23px;
-    }
-
-    .users img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .users .name {
-        width: 60px;
-        font-size: 10px;
-    }
-
-    .users .message{
-        width: 60px;
-        font-size: 7px;
-    }
-
-    .users .time {
-        font-size: 8px;
-    }
+main .bot .class .class-1 {
+    width: 60%;
+    height: 18vh;
+    padding: 1vh 1vw 0 1vw;
+    background-color: #E6EDF6;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
 }
 
-@media screen and (max-width : 767px) {
-    .notif, .profile {
-        justify-content: center;
+main .bot .class .bg-1 {
+    background-image: url(../images/background-bank.png);
+}
+
+main .bot .class .bg-2 {
+    background-image: url(../images/background-history.png);
+}
+
+main .bot .class .class-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .bot .class .class-title p {
+    display: inline-block;
+    width: 10vw;
+    height: 8vh;
+    font-size: 2vh;
+    margin-bottom: 5vh;
+}
+
+main .bot .class .class-title img {
+    height: 0.7vh;
+    position: relative;
+    top: 1vh;
+}
+
+main .bot .class .class-2 {
+    width: 30%;
+    height: 18vh;
+    padding: 1vh 0 0 1vw;
+    background-color: #E6EDF6;
+    border-right: 4px solid #dad6d6;
+    border-radius: 10px 0 0 10px;
+}
+
+main .bot .class .empty-class {
+    background-color: #FFF;
+}
+
+main .bot .class .class-2 .class-title {
+    overflow: hidden;
+}
+
+main .bot .class .duration p {
+    font-size: 1.3vh;
+}
+
+main .bot .time p {
+    font-size: 1.5vh;
+}
+
+/* message */
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 95%;
+    overflow: auto;
+    padding-top: 2vh;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.member .member-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 2vh;
+}
+
+.member .member-title h2 {
+    font-size: 3vh;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.member .member-title img {
+    height: 3vh;
+}
+
+.member .search {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.member .search input {
+    height: 4.5vh;
+    padding-left: 45px;
+    background-color: #E6EDF6;
+    border: none;
+    border-radius: 17px;
+}
+
+.member .search img {
+    width: 26px;
+    position: relative;
+    bottom: 4vh;
+    left: 1vw;
+}
+
+.member .users {
+    width: 90%;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.member .users img {
+    width: 5vw;
+    height: fit-content;
+    margin-right: 2vw;
+}
+
+.member .users .user-message {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 5vh;
+    margin-right: 1vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.member .users .user-message p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.member .users .user-message .name {
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+.member .users .user-message .message {
+    font-size: 1.3vh;
+}
+
+.member .users .time {
+    font-size: 1.3vh;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    /* navbar */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
-    .notif-icon, .profile-icon {
-        margin-left: 0;
-        margin-right: 0;
-    }
+    /* sidebar and message */
 
-    .profile-icon {
-        width: 40px;
-    }
-
-    .profile-name, .status {
+    .navigation, .member {
         display: none;
     }
 
-    .current-page label p, .another-page label p {
-        display: none;
+    /* content */
+
+    main {
+        width: 90%;
     }
 
-    .dashboard-label img {
-        width: 30px;
-        height: 30px;
-        margin: 0;
+    main .top .carousel .slider .car-nav .current-button {
+        width: 7vw;
     }
 
-    .another-page label img {
-        width: 30px;
-        height: 30px;
-        margin: 0;
+    main .bot .calender .calender-table .current-day {
+        width: 5vw;
     }
 
-    .slider {
-        height: 300px;
+    main .bot .time p {
+        width: 10vw;
+        bottom: 2.2vh;
     }
 
-    .slider h1 {
-        margin-left: 20px;
+    main .bot .class .class-title p {
+        width: 25vw;
+        font-size: 1.7vh;
     }
 
-    .carousel {
-        height: 230px;
-    }
-
-    .carousel p {
-        margin-top: 40px;
-        margin-left: 20px;
-        font-size: 0.7rem;
-    }
-
-    .schedule {
-        height: 680px;
-    }
-
-    .calender {
-        flex-direction: column;
-        margin-left: 5px;
-    }
-
-    .calender .date {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .calender-number .day, .calender-number .number {
-        font-size: 8px;
-    }
-
-    .col-3 {
-        display: none;
-    }
-    
-    .member {
-        width: 50px;
-        padding: 10px 5px;
-        height: 860px;
-    }
-
-    .message-title {
-        justify-content: center;
-    }
-
-    .message-title h5 {
-        display: none;
-    }
-
-    .users {
-        height: 40px;
-        justify-content: center;
-    }
-
-    .users .name, .users .message, .users .time {
-        display: none;
-    }
-
-    .users img {
-        margin: 0;
-    }
 
 }

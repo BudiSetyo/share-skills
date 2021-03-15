@@ -12,136 +12,183 @@
 
     <link rel="stylesheet" href="./assets/css/dashboard-user.css">
 
-    <title>Dashboard User</title>
+    <title>Dashboard</title>
 </head>
 
 <body>
+
     <div class="container-fluid">
-        <div class="row page">
-            <div class="col-2 col-lg-2 col-md-2">
-                <nav>
-                    <div class="profile">
-                        <div class="notif">
-                            <img class="notif-icon" src="assets/images/notification-icon.png" alt="notification">
-                        </div>
-                        <img class="profile-icon" src="assets/images/profile-icon.png" alt="profile">
-                        <h3 class="profile-name">Emir Kharisma</h3>
-                        <p class="status">online</p>
+        <nav>
+            <img class="menu" src="assets/images/burger-icon.png" alt="burger-icon">
+            <img class="chat" src="assets/images/chat-icon.png" alt="chat-icon">
+        </nav>
+
+        <div class="wrapper">
+            <aside class="navigation">
+                <div class="notif">
+                    <img src="assets/images/notification-icon.png" alt="notif-icon">
+                </div>
+
+                <div class="profile">
+                    <img src="assets/images/profile-icon.png" alt="profile-icon">
+                    <h5>Emir Kharisma</h5>
+                    <p>online</p>
+                </div>
+
+                <div class="current">
+                    <div class="option">
+                        <img src="assets/images/dashboard-icon.png" alt="dashboard-icon">
+                        <p>Dashboard</p>
                     </div>
-                    <div class="current-page">
-                        <label class="dashboard-label" for="dashbord"><img src="assets/images/dashboard-icon.png"
-                                alt="dashboard-icon"><p>Dashboard</p></label>
+                </div>
+
+                <div class="another">
+                    <div class="option">
+                        <img src="assets/images/activity-icon.png" alt="activity-icon">
+                        <p>Activity</p>
                     </div>
-                    <div class="another-page">
-                        <label class="activity-label" for="activity"><img src="assets/images/activity-icon.png"
-                                alt="activity-icon"><p>Activity</p></label>
-                        <label class="settings-label" for="settings"><img src="assets/images/setting-icon.png"
-                                alt="settings-icon"><p>Settings</p></label>
-                        <label class="help-label" for="help"><img src="assets/images/help-icon.png" alt="help-icon">
-                            <p>Help</p></label>
-                        <label class="logout-label" for="logout"><img src="assets/images/logout-icon.png"
-                                alt="logout-icon"><p>Logout</p></label>
+
+                    <div class="option">
+                        <img src="assets/images/setting-icon.png" alt="setting-icon">
+                        <p>Settings</p>
                     </div>
-                </nav>
-            </div>
-            <div class="col-5 col-lg-5 col-md-5 main">
-                <div class="slider">
-                    <h1>News</h1>
+
+                    <div class="option">
+                        <img src="assets/images/help-icon.png" alt="help-icon">
+                        <p>Help</p>
+                    </div>
+
+                    <div class="option">
+                        <img src="assets/images/logout-icon.png" alt="logout-icon">
+                        <p>Logout</p>
+                    </div>
+                </div>
+            </aside>
+
+            <main>
+                <div class="top">
+                    <h2>News</h2>
                     <div class="carousel">
-                        <p>New update for front end development class sylabus!</p>
-                        <div class="indicator">
-                            <button class="current-nav"></button>
-                            <button></button>
-                            <button></button>
-                            <button></button>
-                            <button></button>
+                        <div class="slider">
+                            <div class="des">
+                                <p>New update for front end development class sylabus!</p>
+                            </div>
+
+                            <div class="car-nav">
+                                <button class="current-button"></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="schedule">
+
+                <div class="bot">
                     <div class="calender">
-                        <h3 class="date">Today, October 16</h3>
-                        <img class="calender-icon" src="assets/images/calender-icon.png" alt="calender-icon">
+                        <div class="today">
+                            <h2>Today, October 16</h2>
+                            <img src="assets/images/calender-icon.png" alt="calender-icon">
+                        </div>
+
+                        <div class="calender-table">
+                            <div class="calender-number">
+                                <p class="day">Mo</p>
+                                <p class="number">12</p>
+                            </div>
+                            <div class="calender-number">
+                                <p class="day">Tu</p>
+                                <p class="number">13</p>
+                            </div>
+                            <div class="calender-number">
+                                <p class="day">We</p>
+                                <p class="number">14</p>
+                            </div>
+                            <div class="calender-number">
+                                <p class="day">Th</p>
+                                <p class="number">15</p>
+                            </div>
+                            <div class="calender-number current-day">
+                                <p class="day">Fr</p>
+                                <p class="number">16</p>
+                            </div>
+                            <div class="calender-number">
+                                <p class="day">Sa</p>
+                                <p class="number">17</p>
+                            </div>
+                            <div class="calender-number">
+                                <p class="day">Su</p>
+                                <p class="number">18</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="calender-table">
-                        <div class="calender-number">
-                            <p class="day">Mo</p>
-                            <p class="number">12</p>
+
+                    <div class="schedule">
+                        <div class="schedule-title">
+                            <p>All schedule <span>For you</span></p>
                         </div>
-                        <div class="calender-number">
-                            <p class="day">Tu</p>
-                            <p class="number">13</p>
-                        </div>
-                        <div class="calender-number">
-                            <p class="day">We</p>
-                            <p class="number">14</p>
-                        </div>
-                        <div class="calender-number">
-                            <p class="day">Th</p>
-                            <p class="number">15</p>
-                        </div>
-                        <div class="calender-number current-day">
-                            <p class="day">Fr</p>
-                            <p class="number">16</p>
-                        </div>
-                        <div class="calender-number">
-                            <p class="day">Sa</p>
-                            <p class="number">17</p>
-                        </div>
-                        <div class="calender-number">
-                            <p class="day">Su</p>
-                            <p class="number">18</p>
-                        </div>
-                    </div>
-                    <div class="all-schedule">
-                        <p>All schedule <span>For you</span></p>
-                    </div>
-                    <div class="list">
-                        <div class="clock">
+
+                        <div class="time">
                             <p>8:00</p>
                         </div>
-                        <div class="row class">
-                            <div class="col-7 col-md-6 class-1">
-                                <div class="title">
-                                    <h4>Introduction to Banking Finance</h4>
-                                    <img src="assets/images/list-icon.png" alt="list">
+
+                        <div class="class">
+                            <div class="class-1 bg-1">
+                                <div class="class-title">
+                                    <p>Introduction to Banking Finance</p>
+                                    <img src="assets/images/list-icon.png" alt="list-icon">
                                 </div>
-                                <p class="time">100 minutes</p>
+
+                                <div class="duration">
+                                    <p>100 minutes</p>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-3 empty-class"></div>
+
+                            <div class="class-2 empty-class"></div>
                         </div>
-                    </div>
-                    <div class="list">
-                        <div class="clock">
+
+                        <div class="time">
                             <p>11:00</p>
                         </div>
-                        <div class="row class">
-                            <div class="col-7 col-md-6 class-2">
-                                <div class="title">
-                                    <h4>History of Europe</h4>
-                                    <img src="assets/images/list-icon.png" alt="list">
+
+                        <div class="class">
+                            <div class="class-1 bg-2">
+                                <div class="class-title">
+                                    <p>History of Europe</p>
+                                    <img src="assets/images/list-icon.png" alt="list-icon">
                                 </div>
-                                <p class="time time-2">100 minutes</p>
+
+                                <div class="duration">
+                                    <p>100 minutes</p>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-3 empty-class"></div>
+
+                            <div class="class-2 empty-class"></div>
                         </div>
-                    </div>
-                    <div class="list">
-                        <div class="clock">
+
+                        <div class="time">
                             <p>Finish</p>
                         </div>
+
+
                     </div>
+
                 </div>
-            </div>
-            <div class="col-4 col-lg-4 col-md-3 member">
-                <div class="message-title">
-                    <h5>Messages</h5>
-                    <img src="assets/images/plus-icon.png" alt="plus-icon">
+                
+            </main>
+
+            <aside class="member">
+                <div class="member-title">
+                    <h2>Messages</h2>
+                    <img src="assets/images/plus-icon.png" alt="">
                 </div>
-                <div class="form-search">
-                    <input class="search-input" type="search" name="search" placeholder="Search">
-                    <img class="search-icon" src="assets/images/search-icon.png" alt="search-icon">
+
+                <div class="search">
+                    <input type="search" placeholder="Search">
+                    <img src="assets/images/search-icon.png" alt="search-icon">
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-1.png" alt="profile-icon-1">
                     <div class="user-message">
@@ -150,6 +197,7 @@
                     </div>
                     <p class="time">10.15 pm</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-2.png" alt="profile-icon-2">
                     <div class="user-message">
@@ -158,6 +206,7 @@
                     </div>
                     <p class="time">9.12 pm</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-3.png" alt="profile-icon-3">
                     <div class="user-message">
@@ -166,6 +215,7 @@
                     </div>
                     <p class="time">1.23 pm</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-4.png" alt="profile-icon-4">
                     <div class="user-message">
@@ -174,6 +224,7 @@
                     </div>
                     <p class="time">Yesterday</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-5.png" alt="profile-icon-5">
                     <div class="user-message">
@@ -182,6 +233,7 @@
                     </div>
                     <p class="time">Yesterday</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-6.png" alt="profile-icon-6">
                     <div class="user-message">
@@ -190,6 +242,7 @@
                     </div>
                     <p class="time">8/10</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-7.png" alt="profile-icon-7">
                     <div class="user-message">
@@ -198,6 +251,7 @@
                     </div>
                     <p class="time">7/10</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-8.png" alt="profile-icon-8">
                     <div class="user-message">
@@ -206,6 +260,7 @@
                     </div>
                     <p class="time">1/10</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-9.png" alt="profile-icon-9">
                     <div class="user-message">
@@ -214,6 +269,7 @@
                     </div>
                     <p class="time">1/10</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-10.png" alt="profile-icon-10">
                     <div class="user-message">
@@ -222,6 +278,7 @@
                     </div>
                     <p class="time">22/9</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-11.png" alt="profile-icon-11">
                     <div class="user-message">
@@ -230,6 +287,7 @@
                     </div>
                     <p class="time">21/9</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-12.png" alt="profile-icon-12">
                     <div class="user-message">
@@ -238,6 +296,7 @@
                     </div>
                     <p class="time">21/9</p>
                 </div>
+
                 <div class="users">
                     <img src="assets/images/profile-icon-13.png" alt="profile-icon-13">
                     <div class="user-message">
@@ -246,9 +305,11 @@
                     </div>
                     <p class="time">11/8</p>
                 </div>
-            </div>
+
+            </aside>
         </div>
     </div>
+
 </body>
 
 </html>
