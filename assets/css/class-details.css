@@ -235,6 +235,20 @@ section {
     border-bottom: 1px solid #C4C4C4;
 }
 
+.bot .menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.bot .menu a:hover {
+    color: #5784BA;
+    border-bottom: 2px solid #5784BA;
+}
+
+.bot .menu a p {
+    margin-right: 0;
+}
+
 .bot .menu p {
     margin-bottom: 0;
     margin-right: 5vh;

@@ -172,6 +172,14 @@ section {
     font-size: 60%;
 }
 
+.myclass .table-row a {
+    display: inline-block;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+
 .myclass .table-row .checkbox-tab, .myclass .table-header .checkbox {
     margin-right: 2%;
 }

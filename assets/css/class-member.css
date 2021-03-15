@@ -243,6 +243,19 @@ section {
     font-weight: bold;
 }
 
+.bot .menu p a {
+    text-decoration: none;
+    color: black;
+}
+
+.bot .menu p a:hover {
+    color: #5784BA;
+}
+
+.bot .menu .link:hover {
+    border-bottom: 2px solid #5784BA;
+}
+
 .bot .menu .current-menu {
     position: relative;
     color: #5784BA;
@@ -255,6 +268,11 @@ section {
     align-items: center;
     width: 90%;
     margin-bottom: 1vh;
+}
+
+.bot .member a {
+    text-decoration: none;
+    color: black;
 }
 
 .bot .member .list {
