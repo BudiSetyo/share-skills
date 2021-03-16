@@ -293,7 +293,8 @@ main .bot .schedule .schedule-title p {
     color: #5784BA;
 }
 
-main .bot .schedule .schedule-title p span {
+main .bot .schedule .schedule-title p a {
+    text-decoration: none;
     color: #ADA9BB;
 }
 
