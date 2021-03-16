@@ -73,6 +73,10 @@ h1 {
     color: #000;
 }
 
+.forgot-pass a:hover {
+    color: #5784BA;
+}
+
 .button {
     width: 40%;
     margin-top: 10%;
